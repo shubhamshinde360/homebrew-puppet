@@ -32,7 +32,7 @@ jobs:
     strategy:
       matrix:
         macos: [ 'macos-13' ]
-        formula: [ 'kubectl-ran' ]
+        formula: [ 'kubectl-ran', 'cmake' ]
     runs-on: ${{ matrix.macos }}
     steps:
       - name: Checkout current PR
